@@ -34,13 +34,13 @@ namespace is_authorized
         {
             bool guess = true;
             int count = 5;
-            
+
             while(count > 0)
             {
                 System.Console.WriteLine("Mata in ett lösenord:");
                 string första = Console.ReadLine();
                 
-                if (första.ToLower() == "räv")
+                if (första.ToLower() == "räv" || första.ToLower() == "oxe" || första.ToLower() == "rävoxe")
                 {
                     guess = true;
                     count = 5;
@@ -60,7 +60,7 @@ namespace is_authorized
                 System.Console.WriteLine("Mata in ett andra lösenord:");
                 string första = Console.ReadLine();
                 
-                if (första.ToLower() == "oxe")
+                if (första.ToLower() == "räv" || första.ToLower() == "oxe" || första.ToLower() == "rävoxe")
                 {
                     guess = true;
                     count = 5;
@@ -81,7 +81,7 @@ namespace is_authorized
                 System.Console.WriteLine("Mata in ett tredje lösenord:");
                 string första = Console.ReadLine();
                 
-                if (första.ToLower() == "rävoxe")
+                if (första.ToLower() == "räv" || första.ToLower() == "oxe" || första.ToLower() == "rävoxe")
                 {
                     guess = true;
                     count = 5;
